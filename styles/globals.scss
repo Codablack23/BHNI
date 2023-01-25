@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import  "./setup/variables";
+@import  "./setup/mixins";
+
+@each $k,$v in $colors{
+   .bh-#{$k}{
+    background: $v;
+    @if $k == "black" or $k == "danger" or $k == "primary"{
+      color: #fff;
+    }
+    @if $k == "white" or $k == "light" or $k== "light-grey" {
+      color: #000;
+    }
+   }
+   .bh-hover-#{$k}{
+    transition: all ease 0.4s;
+    &:hover{
+      background: $v;
+      @if $k == "black" or $k == "danger" or $k == "primary"{
+        color: #fff;
+      }
+      @if $k == "white" or $k == "light" or $k== "light-grey" {
+        color: #000;
+      }
+    }
+   }
+   .bh-text-#{$k}{
+     color: $v !important;
+   }
+   .bh-hover-text-#{$k}{
+    transition: all ease 0.4s;
+    &:hover{
+      color: $v !important;
+    }
+   }
+}
+.bh-card{
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+body{
+  @extend .bh-light;
+}
+
+.bh-container{
+  max-width: 1096px;
+  padding: $padding;
+  margin-inline:auto;
+}
+
+
+.bh-team-member{
+  @extend .bh-light;
+  .img-cover{
+    min-height: 200px;
+  }
+  min-width: 250px;
+  margin-right: $padding;
+}
+
+.bh-event{
+  min-width: 400px;
+  .img-cover{
+    min-height: 200px;
+    @extend .bh-light;
+  }
+}
