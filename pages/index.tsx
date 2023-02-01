@@ -8,13 +8,14 @@ import Objectives from '@/components/home/Objectives'
 import Team from '@/components/home/Team'
 import Events from '@/components/home/Events'
 import WhoWeAre from '@/components/home/WhoWeAre'
+import Modal from '@/components/widgets/Modal'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
    <div>
-    {/* <Hero/> */}
+    <Hero/>
     <NewsRoom/>
      <div className="bh-white">
       <WhoWeAre/>

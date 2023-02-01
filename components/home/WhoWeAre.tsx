@@ -34,9 +34,9 @@ export default function WhoWeAre(){
         <div className="py-12">
            <header className="flex items-center justify-between">
                 <h4 className="bh-text-danger font-bold text-xl">Who We Are</h4>
-                <hr className="bh-danger w-10/12" style={{height:"2px"}} />
+                <hr className="bh-danger w-5/12 md:w-10/12" style={{height:"2px"}} />
             </header>
-            <h4 className="my-3 text-3xl bh-text-primary font-bold">We prioritize healthcare service delivery in Nigeria</h4>
+            <h4 className="my-3 text-2xl md:text-3xl bh-text-primary font-bold">We prioritize healthcare service delivery in Nigeria</h4>
             <div className="md:flex mt-4 rounded-lg bh-card">
                 <div style={{flex:2}}>
                   <Image
@@ -48,8 +48,8 @@ export default function WhoWeAre(){
                   />
                 </div>
                 <div style={{flex:3}}>
-                    <div className="pt-14 mx-auto" style={{maxWidth:450}}>
-                       <h4 className="my-3 text-3xl bh-text-primary font-bold">This is who we are, these are the pillars that holds us.</h4>
+                    <div className="pt-6 md:pt-14 pb-6 mx-auto px-6" style={{maxWidth:450}}>
+                       <h4 className="my-3 text-2xl md:text-3xl bh-text-primary font-bold">This is who we are, these are the pillars that holds us.</h4>
                        <CustomTab
                        tabs={tabs}
                        />

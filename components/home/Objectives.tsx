@@ -29,9 +29,9 @@ export default function Objectives(){
             <div className="bh-container">
                 <header className="flex items-center justify-between">
                     <h4 className="bh-text-danger font-bold text-xl">Objectives Of BHNI </h4>
-                    <hr className="bh-danger w-9/12" style={{height:"2px"}} />
+                    <hr className="bh-danger w-5/12 md:w-9/12" style={{height:"2px"}} />
                 </header>
-                <h4 className="my-3 text-3xl bh-text-primary font-bold">Here are our four (4) key objectives</h4>
+                <h4 className="my-3 text-2xl md:text-3xl bh-text-primary font-bold">Here are our four (4) key objectives</h4>
                 <div className="grid grid-cols-2 gap-10 my-3">
                   <Objective 
                   icon="/icons/health.svg"

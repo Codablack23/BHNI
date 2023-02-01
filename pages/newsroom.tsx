@@ -9,10 +9,11 @@ interface StoryProps{
 }
 
 const Story = ({isReversed,title,imgUrl,content}:StoryProps)=>(
-    <div className={`bh-card bh-white rounded flex my-6 mr-6 ${isReversed?"flex-row-reverse":""}`} style={{minWidth:900}}>
+    <div className={`bh-card bh-white rounded flex my-6 mr-6 ${isReversed?"flex-row-reverse":""}`} style={{minWidth:700}}>
     <div className="" style={{flex:3}}>
       <Image
       src={imgUrl}
+      className="object-cover"
       width={"100%"}
       height={"100%"}
       alt="ww1"
@@ -60,17 +61,16 @@ export default function Events(){
                 <h4 className="bh-text-danger font-bold text-xl">Events</h4>
                 <hr className="bh-danger w-10/12" style={{height:"2px"}} />
             </header>
-            <h4 className="my-3 text-3xl bh-text-primary font-bold">What we are doing at the moment!</h4>
+            <h4 className="my-3 text-2xl md:text-3xl bh-text-primary font-bold">What we are doing at the moment!</h4>
             <div>
                 <Image
                 src="/ww1.png"
                 width={"100%"}
-                height={"400px"}
                 alt="article"
                 preview={false}
                 />
             </div>
-             <div className="w-100 grid grid-cols-3 my-5 gap-x-3">
+             <div className="w-100 md:grid grid-cols-3 my-5 gap-x-3">
                 <div className="col-span-2">
                  <h3 className="bh-text-primary text-3xl">Socio-economic sensitization on secondary schools in the south south geo-political zones</h3>
                  <p className="my-3">
@@ -95,6 +95,11 @@ export default function Events(){
                 <Story imgUrl="/ww1.png" isReversed={false}/>
                 <Story imgUrl="/ww2.png" isReversed={true}/>
                </section>
+               <div className="flex justify-end my-2">
+                  <button className="h-10 w-10 rounded-full bh-light flex items-center justify-center">
+                     <i className="bi bi-arrow-right bh-text-primary"></i>
+                  </button>
+               </div>
              </div>
          </div>
         </div>
