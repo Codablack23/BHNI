@@ -7,6 +7,7 @@ export default function DefaultPage ({goBack,push}:any){
     }
     return (
       <div className="bh-white p-4 md:rounded-lg pt-6" style={{minHeight:"90vh"}}>
+        <p className="text-center font-semibold m-auto mb-8" style={{maxWidth:"520px"}}>BHNi accept donations either in cash or kind from well spirited individuals, corporate bodies, religious organizations and government.</p>
       <form className="md:w-10/12 m-auto" onSubmit={handleSubmit}>
         <div className="mb-6">
         <h4 className="text-2xl text-center bh-text-primary my-4 font-semibold">Donate to the BHNI</h4>

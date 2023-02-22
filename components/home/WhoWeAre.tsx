@@ -37,8 +37,8 @@ export default function WhoWeAre(){
                 <hr className="bh-danger w-5/12 md:w-10/12" style={{height:"2px"}} />
             </header>
             <h4 className="my-3 text-2xl md:text-3xl bh-text-primary font-bold">We prioritize healthcare service delivery in Nigeria</h4>
-            <div className="md:flex mt-4 rounded-lg bh-card">
-                <div style={{flex:2}}>
+            <div className="md:flex mt-4 rounded-lg bh-card" style={{minHeight:"410px"}}>
+                <div style={{flex:3}}>
                   <Image
                   src="/Union 3.png"
                   preview={false}
@@ -48,8 +48,8 @@ export default function WhoWeAre(){
                   />
                 </div>
                 <div style={{flex:3}}>
-                    <div className="pt-6 md:pt-14 pb-6 mx-auto px-6" style={{maxWidth:450}}>
-                       <h4 className="my-3 text-2xl md:text-3xl bh-text-primary font-bold">This is who we are, these are the pillars that holds us.</h4>
+                    <div className="pt-6 md:pt-10 pb-6 mx-auto px-6" style={{maxWidth:450}}>
+                       <h4 className="my-3 bh-text-primary">BHNi, Blissful Health Nigeria Initiative is an indigenous non governmental organization that was founded in the year 2022 BHNi was incorporated in Nigeria in 2022 with registration number CAC/.No/187280 and headquarters in Nigeria with a corporate office in Canada. BHNi core areas of interest includes Education, Health and Skills enhancement programs.</h4>
                        <CustomTab
                        tabs={tabs}
                        />

@@ -60,6 +60,9 @@ body{
   }
   min-width: 250px;
   margin-right: $padding;
+  .text-container{
+    min-height: 120px;
+  }
 }
 
 .bh-event{

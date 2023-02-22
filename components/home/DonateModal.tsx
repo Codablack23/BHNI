@@ -75,9 +75,7 @@ interface PageProps{
 
     return(
    <Modal isOpen={modalOpen} closeModal={closeModal}>
-      <PageRouter
-      pages={pages}
-      />
+      <PageRouter pages={pages}/>
    </Modal>
     )
   }
