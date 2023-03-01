@@ -57,6 +57,12 @@ body{
   @extend .bh-light;
   .img-cover{
     min-height: 200px;
+    img{
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+   
+    }
   }
   min-width: 250px;
   margin-right: $padding;
@@ -77,6 +83,21 @@ body{
   $heightValue: $i * 5 * 1vh;
   .bh-min-vh-#{$height}{
    min-height: $heightValue;
+  }
+  @include md{
+    .bh-min-vh-md-#{$height}{
+      min-height: $heightValue!important;
+     }
+  }
+  @include sm{
+    .bh-min-vh-sm-#{$height}{
+      min-height: $heightValue !important;
+     }
+  }
+  @include xs{
+    .bh-min-vh-xs-#{$height}{
+      min-height: $heightValue !important;
+     }
   }
 }
 .gallery{

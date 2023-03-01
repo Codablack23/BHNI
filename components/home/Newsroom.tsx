@@ -24,8 +24,8 @@ const defContent = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
     </div>
     <div className="bh-white rounded-xl" style={{flex:2}}>
        <div className="mx-auto px-7 my-10">
-          <h4 className="bh-text-primary font-bold text-lg md:text-3xl">{title?title:"What we are doing at the moment!"}</h4>
-          <p className="py-5 md:font-semibold font-light text-base">{content?content:defContent.slice(0,99)}</p>
+          <h4 className="bh-text-primary font-bold text-base sm:text-lg md:text-3xl">{title?title:"What we are doing at the moment!"}</h4>
+          <p className="py-3 sm:py-5 md:font-semibold text-xs font-light sm:text-base">{content?content:defContent.slice(0,99)}</p>
           <Link href={"/newsroom"}>
           <button className="bh-danger bh-card bh-hover-white p-2 rounded-lg" style={{minWidth:"150px"}}>Read More</button>
           </Link>

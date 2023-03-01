@@ -12,7 +12,7 @@ export default function Navbar(){
   const [isCareerModalOpen,setIsCareerModalOpen] = useState(false)
   const [isSearchOpen,setIsSearchOpen] = useState(false)
 
-  const {openModal} = useContext(ModalContext)
+  const {openModal,} = useContext(ModalContext)
   return (
     <header className="bh-white sticky top-0 z-50">
       <Modal isOpen={isCareerModalOpen} closeModal={()=>setIsCareerModalOpen(false)} >
@@ -68,7 +68,7 @@ export default function Navbar(){
           <Link href={"/newsroom"}><li className="p-1 py-3 mt-8 bh-light bh-hover-text-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Newsroom</p></li></Link>
           <Link href={"/what-we-are"}><li className="p-3 py-3 bh-light bh-hover-text-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>What we are</p></li></Link>
           <Link href={"/events"}><li className="p-1 py-3 bh-light bh-hover-text-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Events</p></li></Link>
-          <li onClick={()=>setIsCareerModalOpen(true)} className="p-1 mb-3 bh-light bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Careers</p></li>
+          <li onClick={()=>{setIsOpen(false);setIsCareerModalOpen(true)}} className="p-1 mb-3 bh-light bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Careers</p></li>
           <button type="button" className="bh-danger bh-card bh-hover-white w-10/12 block mx-auto mt-5 p-2 rounded-lg" onClick={openModal}>Donate</button>
          </ul>
        </Modal>
@@ -106,7 +106,7 @@ export default function Navbar(){
         <Link href={"/newsroom"}><li className="p-1 bh-white bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Newsroom</p></li></Link>
         <Link href={"/"}><li className="p-1 bh-white bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>What we are</p></li></Link>
         <Link href={"/events"}><li className="p-1 bh-white bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Events</p></li></Link>
-        <li onClick={()=>setIsCareerModalOpen(true)} className="p-1 bh-white bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Careers</p></li>
+        <li onClick={()=>{setIsOpen(false);setIsCareerModalOpen(true)}} className="p-1 bh-white bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Careers</p></li>
     </ul>
     </header>
   )

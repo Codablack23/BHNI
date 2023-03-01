@@ -34,7 +34,7 @@ export default function CustomTab({tabs,defaultTab}:TabProps){
     const {component:Component} = (tabs.find(tab=>tab.key === currentTab)) as TabData
     return (
         <div>
-            <ul className="flex align-items-center ">
+            <ul className="flex items-center ">
                 {tabs.map(tab=>(
                     <li 
                     onClick={changeTab(tab.key)}
