@@ -14,7 +14,7 @@ export default function Navbar(){
 
   const {openModal,} = useContext(ModalContext)
   return (
-    <header className="bh-white sticky top-0 z-50">
+    <header className="sticky top-0 z-50">
       <Modal isOpen={isCareerModalOpen} closeModal={()=>setIsCareerModalOpen(false)} >
         <div className="bh-container bg-white md:rounded-lg pt-6" style={{minHeight:"80vh"}}>
           <h4 className="text-2xl text-center bh-text-primary my-4 font-bold">Join the team! Reach out to us.</h4>
@@ -66,7 +66,7 @@ export default function Navbar(){
        <Modal isOpen={isOpen} closeModal={()=>setIsOpen(false)}>
          <ul className="bh-container bg-white">
           <Link href={"/newsroom"}><li className="p-1 py-3 mt-8 bh-light bh-hover-text-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Newsroom</p></li></Link>
-          <Link href={"/what-we-are"}><li className="p-3 py-3 bh-light bh-hover-text-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>What we are</p></li></Link>
+          <Link href={"/#whoweare"}><li className="p-3 py-3 bh-light bh-hover-text-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Who we are</p></li></Link>
           <Link href={"/events"}><li className="p-1 py-3 bh-light bh-hover-text-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Events</p></li></Link>
           <li onClick={()=>{setIsOpen(false);setIsCareerModalOpen(true)}} className="p-1 mb-3 bh-light bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Careers</p></li>
           <button type="button" className="bh-danger bh-card bh-hover-white w-10/12 block mx-auto mt-5 p-2 rounded-lg" onClick={openModal}>Donate</button>
@@ -98,13 +98,13 @@ export default function Navbar(){
             alt="search"
             />
           </div>
-          <button type="button" className="bh-danger bh-card bh-hover-white ml-2 p-2 rounded-lg" onClick={openModal}>Donate</button>
+          <button type="button" className="bh-danger bh-card bh-hover-white ml-2 px-7 py-2 rounded-lg" onClick={openModal}>Donate</button>
        </form>
       </nav>
     </section>
     <ul className="bh-container hidden md:grid grid-cols-4 gap-x-2 -mt-3">
         <Link href={"/newsroom"}><li className="p-1 bh-white bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Newsroom</p></li></Link>
-        <Link href={"/"}><li className="p-1 bh-white bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>What we are</p></li></Link>
+        <Link href={"/#whoweare"}><li className="p-1 bh-white bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Who we are</p></li></Link>
         <Link href={"/events"}><li className="p-1 bh-white bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Events</p></li></Link>
         <li onClick={()=>{setIsOpen(false);setIsCareerModalOpen(true)}} className="p-1 bh-white bh-hover-danger cursor-pointer text-center bh-text-primary bh-card font-bold"><p>Careers</p></li>
     </ul>

@@ -5,6 +5,9 @@
 @import  "./setup/variables";
 @import  "./setup/mixins";
 
+html{
+  scroll-behavior: smooth;
+}
 @each $k,$v in $colors{
    .bh-#{$k}{
     background: $v;
@@ -55,6 +58,7 @@ body{
 
 .bh-team-member{
   @extend .bh-light;
+  min-height: 250px;
   .img-cover{
     min-height: 200px;
     img{
@@ -64,10 +68,11 @@ body{
    
     }
   }
-  min-width: 250px;
+  min-width: 230px;
+  max-width: 230px;
   margin-right: $padding;
   .text-container{
-    min-height: 120px;
+    min-height: 130px;
   }
 }
 
@@ -143,16 +148,40 @@ body{
 }
 .ant-carousel {
   .slick-dots li button {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
+  margin-top: -2px;
   border-radius: 100%;
   background:#000;
   opacity: 1;
+  border: 1px solid #fff;
   }
    .slick-dots li.slick-active button {
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
   border-radius: 100%;
   background:#fff;
 }
+}
+
+.triangle-left{
+  width: 0;
+	height: 0;
+	border-top:25px solid transparent;
+	border-right: 50px solid #fff;
+	border-bottom: 25px solid transparent;
+}
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #fff;
+	border-bottom: 25px solid transparent;
+}
+.triangle-up{
+  width: 0;
+	height: 0;
+  border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 40px solid #00664D;
 }

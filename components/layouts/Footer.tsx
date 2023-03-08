@@ -116,8 +116,9 @@ export default function Footer(){
             </div>
             <SocialSection/>
          </div>
-         <div className="py-4 bh-white my-2">
-            <div className="bh-container md:flex justify-between items-center">
+         <div className="py-4 my-2">
+           <div className="bh-white">
+           <div className="bh-container md:flex justify-between items-center">
                 <div className="flex items-center">
                     <Image
                     src="/icons/mail.svg"
@@ -135,6 +136,8 @@ export default function Footer(){
                 </div>
             </div>   
             <hr />
+           </div>
+           <div className="md:bg-white">
            <div className="bh-container md:flex justify-between items-center">
                 <div className="flex items-center">
                     <Image
@@ -151,6 +154,7 @@ export default function Footer(){
                    <button onClick={()=>setIsOpen(true)} className="bh-black p-2 ml-1 w-full rounded-lg block">Share your Thoughts</button>
                 </div>
             </div>
+           </div>
          </div>
          <p className="my-6 bh-text-primary text-center">Copyright © 2022 BHNI.org, All rights reserved.</p>
         </footer>

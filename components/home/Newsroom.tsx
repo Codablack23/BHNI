@@ -22,7 +22,15 @@ const defContent = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
       preview={false}
       />
     </div>
-    <div className="bh-white rounded-xl" style={{flex:2}}>
+    <div className="bh-white rounded-xl relative" style={{flex:2}}>
+       {isReversed?
+        <div className="w-16 h-16 absolute top-1/2 -right-10">
+         <div className="triangle-right"></div>
+        </div>
+       :<div className="w-16 h-16 absolute top-1/2 -left-10">
+         <div className="triangle-left"></div>
+        </div>
+      }
        <div className="mx-auto px-7 my-10">
           <h4 className="bh-text-primary font-bold text-base sm:text-lg md:text-3xl">{title?title:"What we are doing at the moment!"}</h4>
           <p className="py-3 sm:py-5 md:font-semibold text-xs font-light sm:text-base">{content?content:defContent.slice(0,99)}</p>

@@ -30,7 +30,7 @@ const tabs:TabData[] = [
 
 export default function WhoWeAre(){
     return (
-        <section className="bh-container">
+        <section className="bh-container" id="whoweare">
         <div className="py-12">
            <header className="flex items-center justify-between">
                 <h4 className="bh-text-danger font-bold text-xl">Who We Are</h4>
