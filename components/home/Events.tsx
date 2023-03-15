@@ -17,8 +17,8 @@ const Event=({reversed,img_url}:EventProps)=>(
         />
     </div>
     <div className="p-2">
-        <h4 className="bh-text-primary text-2xl font-semibold">Lorem ipsum dolor sit amet,<br /> consetetur sadipscing elitr,</h4>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <h4 className="bh-text-primary text-base sm:text-2xl font-semibold">Lorem ipsum dolor sit amet,<br /> consetetur sadipscing elitr,</h4>
+        <p className="text-sm md:text-base">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
     </div>
     </div>
 )
