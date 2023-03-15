@@ -14,12 +14,12 @@ export default function Hero(){
         <section className="relative bh-min-vh-60 bh-min-vh-sm-45 -mt-12">
                 <button
                 onClick={prev}
-                className="rounded-full h-10 w-10 opacity-50 bg-gray-300 hover:bg-gray-50 absolute top-1/2 z-10" style={{left:"5%"}}>
+                className="rounded-full h-7 w-7 sm:h-10 sm:w-10 opacity-50 bg-gray-300 hover:bg-gray-50 absolute top-1/2 z-10" style={{left:"5%"}}>
                     <i className="bi bi-arrow-left bh-text-primary"></i>
                 </button>
                 <button 
                  onClick={next}
-                className="rounded-full h-10 w-10 opacity-50 bg-gray-300 hover:bg-gray-50 absolute top-1/2 z-10" style={{right:"5%"}}>
+                className="rounded-full h-7 w-7 sm:h-10 sm:w-10 opacity-50 bg-gray-300 hover:bg-gray-50 absolute top-1/2 z-10" style={{right:"5%"}}>
                     <i className="bi bi-arrow-right bh-text-primary"></i>
                 </button>
             <Carousel 

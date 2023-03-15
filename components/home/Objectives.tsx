@@ -9,17 +9,18 @@ function Objective({icon,content}:ObjProps){
     return (
         <div className="flex items-center col-span-2 md:col-span-1">
         <div style={{flex:1}}>
-        <div className="w-28 flex items-center justify-center rounded-full h-28 bh-danger">
+        <div className=" w-16 h-16 sm:w-20 sm:h-20 md:w-24 flex items-center justify-center rounded-full md:h-24 bh-danger">
            <Image
             src={icon}
             alt="obj"
-            height={70}
+            className={"w-14 h-14 md:w-28 md:h-28"}
+            height={40}
             preview={false}
-            width={70}
+            width={40}
            />
         </div>
         </div>
-        <p className="ml-2" style={{flex:3}}>{content}</p>
+        <p className="ml-2 text-xs sm:text-sm md:text-base" style={{flex:4}}>{content}</p>
       </div>
     )
 }

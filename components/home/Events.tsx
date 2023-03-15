@@ -5,7 +5,7 @@ interface EventProps{
    img_url:string,
 }
 const Event=({reversed,img_url}:EventProps)=>(
-    <div className={`bh-card bh-white p-3 mr-2 flex ${!reversed?"flex-col":"flex-col-reverse"} rounded-lg bh-event `}>
+    <div className={`bh-card bh-white p-3 event mr-2 flex ${!reversed?"flex-col":"flex-col-reverse"} rounded-lg bh-event `}>
     <div className="img-cover rounded-lg">
       <Image
         src={img_url}
@@ -32,7 +32,7 @@ export default function Events(){
                 <hr className="bh-danger w-7/12 md:w-10/12" style={{height:"2px"}} />
             </header>
             <h4 className="my-3 text-2xl md:text-3xl bh-text-primary font-bold">Let's see what we have been up to!</h4>
-             <div className="w-100 overflow-x-auto flex my-5">
+             <div className="overflow-x-auto flex my-5">
                <Event
                img_url='/images/post1.png' 
                reversed={false}/>             

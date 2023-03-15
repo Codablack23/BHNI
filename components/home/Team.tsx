@@ -7,23 +7,22 @@ interface TeamMemberProps{
   title?:string
 }
 const TeamMember=({img_url,name,title}:TeamMemberProps)=>(
-    <div className="bh-card bh-team-member">
+    <div className="bh-card bh-primary bh-team-member">
     <div className="img-cover">
     <Image
     src={img_url}  
     className="z-0"
     width={"100%"}
-    height={"200px"}
     preview={false}
     alt="event banner"
     />
     </div>
-    <div className="bh-primary desc p-3 -mt-2 text-container relative text-center">
-        <div className="absolute z-10 h-16 w-16 -top-9" style={{left:"38%"}}>
+    <div className="desc bh-primary md:p-3 -mt-2 text-container relative text-center">
+        <div className="absolute z-10 h-16 w-16 -top-6" style={{left:"38%"}}>
            <div className="triangle-up"></div>
         </div>
-       <h4 className="font-bold text-xl">{name?name:"John Doe"}</h4>
-       <p>{title?title:"Founder/CEO"}</p>
+       <h4 className="font-bold text-base md:text-xl">{name?name:"John Doe"}</h4>
+       <p className="text-xs md:text-base">{title?title:"Founder/CEO"}</p>
     </div>
    </div>
 )

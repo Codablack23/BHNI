@@ -1,6 +1,6 @@
 import {Image} from 'antd'
 import CustomTab from '../widgets/TabMenu'
-import { FC, ReactNode } from 'react'
+import { FC} from 'react'
 
 interface TabData{
     key:number | string,
@@ -12,17 +12,17 @@ const tabs:TabData[] = [
     {
       key:"1",
       tab:"Mission",
-      component:()=><p className="text-gray-800 font-bold">To promote family centered and equitable healthcare programs in Nigeria.</p>
+      component:()=><p className="text-gray-800 text-sm sm:text-base">To promote family centered and equitable healthcare programs in Nigeria.</p>
     },
     {
       key:"2",
       tab:"Vision",
-      component:()=><p className="text-gray-800 font-bold">To improve qualitative and sustainable healthcare service delivery in Nigeria.</p>
+      component:()=><p className="text-gray-800 text-sm sm:text-base">To improve qualitative and sustainable healthcare service delivery in Nigeria.</p>
     },
     {
       key:"3",
       tab:"Core Values",
-      component:()=><p className="text-gray-800 font-bold">A: Accountability <br/> C: Committed to Integrity <br/>T: Trust S: Service Driven<br/></p>
+      component:()=><p className="text-gray-800 text-sm sm:text-base">A: Accountability <br/> C: Committed to Integrity <br/>T: Trust S: Service Driven<br/></p>
     },
   ] 
 
@@ -49,7 +49,7 @@ export default function WhoWeAre(){
                 </div>
                 <div style={{flex:3}}>
                     <div className="pt-6 md:pt-10 pb-6 mx-auto px-6" style={{maxWidth:450}}>
-                       <h4 className="my-5 text-sm sm:text-base bh-text-primary">BHNi, Blissful Health Nigeria Initiative is an indigenous non governmental organization that was founded in the year 2022 BHNi was incorporated in Nigeria in 2022 with registration number CAC/.No/187280 and headquarters in Nigeria with a corporate office in Canada. BHNi core areas of interest includes Education, Health and Skills enhancement programs.</h4>
+                       <h4 className="my-5 text-xs sm:text-base">BHNi, Blissful Health Nigeria Initiative is an indigenous non governmental organization that was founded in the year 2022 BHNi was incorporated in Nigeria in 2022 with registration number CAC/.No/187280 and headquarters in Nigeria with a corporate office in Canada. BHNi core areas of interest includes Education, Health and Skills enhancement programs.</h4>
                        <br className="block sm:hidden" />
                        <CustomTab
                        tabs={tabs}

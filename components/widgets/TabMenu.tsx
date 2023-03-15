@@ -13,7 +13,7 @@ interface TabProps{
 export default function CustomTab({tabs,defaultTab}:TabProps){
     const [currentTab,setCurrentTab] = useState(defaultTab?defaultTab:tabs[0].key)
     const getTabStyle=(isActive:boolean)=>{
-      const shared = `cursor-pointer bh-card mr-4 p-2 text-center transition-all bh-hover-danger`;
+      const shared = `cursor-pointer text-xs sm:text-base bh-card md:mr-4 p-2 text-center transition-all bh-hover-danger`;
       const active = `${shared} bh-danger`;
       const inactive = `${shared} border text-gray-200` 
       return isActive?active:inactive;
